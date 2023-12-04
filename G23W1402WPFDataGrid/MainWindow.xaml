@@ -20,7 +20,7 @@
             <DataGrid
                 x:Name="Grid"
                 DockPanel.Dock="Top"
-                SelectionChanged="OnSelected"/>
+                SelectedItem="{Binding GundamSelected}"/>
         </DockPanel>
     </Border>
 </Window>

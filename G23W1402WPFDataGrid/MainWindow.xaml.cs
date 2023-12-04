@@ -25,12 +25,12 @@ public partial class MainWindow : Window {
         vm.Add(new GundamModel(g.MSName, g.MSModel, g.MSParty));
     }
 
-    private void OnSelected(object sender, RoutedEventArgs e) {
-        GundamModel g = (GundamModel)Grid.SelectedItem;
+    //private void OnSelected(object sender, RoutedEventArgs e) {
+    //    GundamModel g = (GundamModel)Grid.SelectedItem;
 
-        //BitmapImage b = new BitmapImage(new Uri($"images/{g.Name}.jpg",
-        //    UriKind.RelativeOrAbsolute));
-        //Image.Source = b;
-        vm.Select(g);
-    }
+    //    //BitmapImage b = new BitmapImage(new Uri($"images/{g.Name}.jpg",
+    //    //    UriKind.RelativeOrAbsolute));
+    //    //Image.Source = b;
+    //    vm.Select(g);
+    //}
 }
