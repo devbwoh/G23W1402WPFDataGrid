@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Media.Imaging;
 
 namespace G23W1402WPFDataGrid;
 
@@ -16,21 +15,10 @@ public partial class MainWindow : Window {
     }
 
     private void OnAdd(object sender, RoutedEventArgs e) {
-        //vm.Add(new GundamModel("건탱크", "RX-75-4", "연방군"));
-
         Gundam g = new Gundam();
         if (g.ShowDialog() != true)
             return;
 
         vm.Add(new GundamModel(g.MSName, g.MSModel, g.MSParty));
     }
-
-    //private void OnSelected(object sender, RoutedEventArgs e) {
-    //    GundamModel g = (GundamModel)Grid.SelectedItem;
-
-    //    //BitmapImage b = new BitmapImage(new Uri($"images/{g.Name}.jpg",
-    //    //    UriKind.RelativeOrAbsolute));
-    //    //Image.Source = b;
-    //    vm.Select(g);
-    //}
 }
